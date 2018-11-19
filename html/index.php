@@ -493,41 +493,63 @@ special-menu -->
 <section class="special-menu parallax" style="background-image: url(images/bg/01.jpg);">
   <div class="page-section-ptb">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="section-title text-center">
-            <div class="title-separator">
-              <i class="glyph-icon flaticon-food-27 white"></i>
-            </div>
-            <h2 class="text-white"> <span class="text-orange">Our Today’s</span> Special Menu</h2>
-            <p class="text-white">We serve a daily changing menu</p>
-          </div>
-        </div>
-      </div>
+        <?php
+        $file = fopen("./listfood/special.txt", "r") or exit("Unable to open file!");
+        if(!feof($file)) {
+            $line = fgets($file);
+            $token = explode( "-",$line);
+
+            if(strtolower(trim($token[0])) == 'title') {
+                ?>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="section-title text-center">
+                            <div class="title-separator">
+                                <i class="glyph-icon flaticon-food-27 white"></i>
+                            </div>
+                            <h2 class="text-white">
+                                <?php
+                                echo ucwords(trim($token[1]));
+                                ?></h2>
+                            <p class="text-white">
+                                <?php
+                                echo ucwords(trim($token[2]));
+                                ?></p>
+                        </div>
+                    </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
       <div class="row">
         <div class="col-lg-12 col-md-12">
           <div class="owl-carousel" data-nav-dots="true" data-items="4" data-md-items="3" data-sm-items="2" data-xs-items="1" data-dotcolor='white'>
               <?php
-              $file = fopen("./listfood/special.txt", "r") or exit("Unable to open file!");
+
               //Output a line of the file until the end is reached
               while(!feof($file))
               {
                   $line = fgets($file);
                   $token = explode( "-",$line);
-                   $str = "<div class=\"item\">
-                          <div class=\"menu-body menu-center\">
-                            <div class=\"menu-thumbnail\">
-                              <img class=\"img-responsive center-block\" src=\"images/dish/".trim($token[2])."\" alt=\"\">
-                            </div>
-                            <div class=\"menu-details\">
-                              <div class=\"menu-title clearfix\">
-                                <h4>".$token[0]."</h4>
-                                <span class=\"price\">".trim($token[1])."</span>
+
+                  if(is_numeric(trim($token[0]))) {
+
+                      $str = "<div class=\"item\">
+                              <div class=\"menu-body menu-center\">
+                                <div class=\"menu-thumbnail\">
+                                  <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[3]) . "\" alt=\"\">
+                                </div>
+                                <div class=\"menu-details\">
+                                  <div class=\"menu-title clearfix\">
+                                    <h4>" . $token[1] . "</h4>
+                                    <span class=\"price\">" . trim($token[2]) . "</span>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                          </div>
-                        </div>";
-               echo $str;
+                            </div>";
+                      echo $str;
+                  }
               }
               fclose($file);
               ?>
@@ -570,31 +592,56 @@ our-menu -->
                     if($line != null)
                     {
                         $token = explode("-", $line);
-                        if ($total_line == 0 || $total_line % 2 == 0) echo "<div class=\"row\">";
-                        $str = "<div class=\"col-lg-6 col-md-6 col-sm-6\">
+                        if(strtolower(trim($token[0])) == 'title')
+                        {?>
+                            <div class='row'>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="section-title text-center">
+                                        <h2 class="text-white">
+                                        <?php
+                                            echo ucwords(trim($token[1]));
+                                        ?>
+                                        </h2>
+                                        <p class="text-white">
+                                            <?php
+                                            echo ucwords(trim($token[2]));
+                                            ?>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        <?php
+                        }
+                        else if(is_numeric(trim($token[0])))
+                        {
+                            if ($total_line == 0 || $total_line % 2 == 0)
+                                echo "<div class=\"row\">";
+                            $str = "<div class=\"col-lg-6 col-md-6 col-sm-6\">
                                   <div class=\"menu-body menu-left\">
                                     <div class=\"menu-thumbnail\">
-                                      <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[3]) . "\" alt=\"\">
+                                      <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[4]) . "\" alt=\"\">
                                     </div>
                                     <div class=\"menu-details\">
                                       <div class=\"menu-title clearfix\">
-                                        <h4>" . trim($token[0]) . "</h4>
-                                        <span class=\"price\">" . trim($token[2]) . "</span>
+                                        <h4>" . trim($token[1]) . "</h4>
+                                        <span class=\"price\">" . trim($token[3]) . "</span>
                                       </div>
                                       <div class=\"menu-description\">
-                                        <p>" . trim($token[1]) . "</p>
+                                        <p>" . trim($token[2]) . "</p>
                                       </div>
                                     </div>
                                   </div>
                                 </div>";
 
-                        echo $str;
+                            echo $str;
 
-                        if ($total_line != 0 && $total_line % 2 != 0) echo "</div>";
-                        $total_line++;
+                            if ($total_line != 0 && $total_line % 2 != 0) echo "</div>";
+                            $total_line++;
+                        }
+
                     }
                 }
-//                if ( $total_line != 0) echo "</div>";
                 fclose($file);
 
 
@@ -606,7 +653,7 @@ our-menu -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="menu-body menu-left">
                             <div class="menu-thumbnail">
-                                <img class="img-responsive center-block" src="images/dish/01.png" alt="">
+                                <img class="img-responsive center-block" src="images/dish/dump.png" alt="">
 
                             </div>
                             <div class="menu-details">
@@ -629,7 +676,7 @@ our-menu -->
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="menu-body menu-left">
                             <div class="menu-thumbnail">
-                                <img class="img-responsive center-block" src="images/dish/01.png" alt="">
+                                <img class="img-responsive center-block" src="images/dish/dump.png" alt="">
 
                             </div>
                             <div class="menu-details">
@@ -1117,107 +1164,6 @@ reservation form  -->
 <!--=================================
 reservation form  -->
 
-<!--=================================
-testimonials -->
-
-<section class="testimonials">
-  <div class="object-bottom-top">
-    <div class="object-right">
-      <img class="img-responsive" src="images/object/05.png" alt="">
-    </div>
-  </div>
-  <div class="page-section-ptb">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 col-md-12">
-          <div class="section-title text-center">
-            <div class="title-separator">
-              <i class="glyph-icon flaticon-food-27"></i>
-            </div>
-            <h2> <span class="text-orange">Our </span> testimonials</h2>
-            <p>What Our Happy Clients say about us</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <div class="testimonial-block left">
-            <div class="testimonial-avatar">
-              <img src="images/team/01.jpg" alt="">
-            </div>
-            <div class="testimonial-info clearfix">
-              <strong>Alice Williams</strong>
-              <span>Head Chef </span>
-              <p>Success isn’t really that difficult. There is a significant portion of the population here in North America, that actually want and need success really no magic to be hard. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <div class="testimonial-block left">
-            <div class="testimonial-avatar">
-              <img src="images/team/02.jpg" alt="">
-            </div>
-            <div class="testimonial-info clearfix">
-              <strong>Anne Smith </strong>
-              <span>kitchen Manager</span>
-              <p>For those of you who are serious about having more, doing more, giving more and being more, success is achievable with some understanding of what to do, discipline. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <div class="testimonial-block left">
-            <div class="testimonial-avatar">
-              <img src="images/team/03.jpg" alt="">
-            </div>
-            <div class="testimonial-info clearfix">
-              <strong>Felica Queen </strong>
-              <span>Head Waiter </span>
-              <p>He first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only few people. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--=================================
-testimonials -->
-
-<!--=================================
-newsletter -->
-
-<section class="newsletter-section orange-bg">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-        <div class="newsletter-image">
-          <img class="img-responsive center-block" src="images/object/15.png" alt="">
-        </div>
-      </div>
-      <div class="col-lg-8 col-md-8 text-center">
-        <div class="newsletter-title mb-20 text-left">
-          <h4 class="text-white">subscribe our newsletter </h4>
-        </div>
-        <form class="form-inline">
-          <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-7">
-              <div class="form-group">
-                <input type="text" class="form-control" id="inputPassword2" placeholder="Enter your email address...">
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-5 text-left">
-              <a class="button black" href="#">Subscribe now</a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--=================================
-newsletter  -->
 
 <!--=================================
 footer 2 -->

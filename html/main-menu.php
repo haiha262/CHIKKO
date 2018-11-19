@@ -94,6 +94,7 @@
                             <!-- active class -->
                             <li><a href="index.php"> Home</a></li>
                             <li><a href="menu.php">Menu</a></li>
+                            <li><a href="catering.php">Catering</a></li>
                             <li><a href="reservation-form.php"> Reservation </a></li>
                             <li><a href="contact.php"> Contact us</a></li>
                         </ul>
