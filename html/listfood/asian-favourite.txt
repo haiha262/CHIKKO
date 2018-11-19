@@ -1,0 +1,17 @@
+TITLE | BREAKFAST - ASIAN FAVOURITE | Breakfast Menu available from 8am until 11.00am DAILY
+TITLE | Banh Mi - Traditional Vietnamese Roll | Special toasted bread roll served with, house made mayo, pate, pickle carrot, cucumber, spring onion, coriander with hoisin and peanut sauce
+
+1 | Banh Mi Bacon and Egg  | (with fried onion and garlic) | 6 | dump.png
+2 | Banh Mi Grilled Chicken | | 7 | dump.png
+3 | Banh Mi Grilled Pork | | 7 | dump.png
+4 | Banh Mi BBQ Meat Ball | | 8 | dump.png
+5 | Banh Mi Roasted Pork Belly | | 8 | dump.png
+6 | Banh Mi Tofu | | 7 | dump.png
+7 | Banh Mi Egg |  | 7 | dump.png
+
+
+TITLE | Roti Wrap | Delicious Malaysian style roti bread
+
+1 | Roti Smoked salmon | Roti, mayo, smoked salmon, salad, tomato, avocado with sweet chili sauce | 10.00 | dump.png
+2 | Roti Chicken / Pork / Tofu / Avocado | Roti, mayo, meat, salad, cheese with sweet chili sauce | 7.00 | dump.png
+3 | Roti Scrambled Egg | Roti, mayo, egg, and cheese | 7.00 | dump.png

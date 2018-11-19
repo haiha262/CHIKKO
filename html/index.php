@@ -575,494 +575,300 @@ our-menu -->
           <!-- Nav tabs -->
           <ul class="tabs-link text-center">
             <li class="active"><a href="#tab-1" data-toggle="tab" aria-expanded="false"><i class="glyph-icon flaticon-hot-mug-doodle"></i> Breakfast</a></li>
-            <li><a href="#tab-2" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> Lunch</a></li>
+            <li><a href="#tab-2" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> ASIAN FAVOURITE</a></li>
             <li><a href="#tab-3" data-toggle="tab"><i class="glyph-icon flaticon-food-9"></i> Dinner</a></li>
             <li><a href="#tab-4" data-toggle="tab"><i class="glyph-icon flaticon-foamy-beer-jar"></i> Drinks</a></li>
+            <li><a href="#tab-5" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> ASIAN FAVOURITE</a></li>
+            <li><a href="#tab-6" data-toggle="tab"><i class="glyph-icon flaticon-food-9"></i> Dinner</a></li>
+            <li><a href="#tab-7" data-toggle="tab"><i class="glyph-icon flaticon-foamy-beer-jar"></i> Drinks</a></li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane fade active in" id="tab-1">
+              <div role="tabpanel" class="tab-pane fade in" id="tab-1">
 
-                <?php
-                $file = fopen("./listfood/breakfast.txt", "r") or exit("Unable to open file!");
-                //Output a line of the file until the end is reached
-                $total_line = 0;
-                while(!feof($file)) {
-                    $line = fgets($file);
-                    if($line != null)
-                    {
-                        $token = explode("-", $line);
-                        if(strtolower(trim($token[0])) == 'title')
-                        {?>
-                            <div class='row'>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="section-title text-center">
-                                        <h2 class="text-white">
-                                        <?php
-                                            echo ucwords(trim($token[1]));
-                                        ?>
-                                        </h2>
-                                        <p class="text-white">
-                                            <?php
-                                            echo ucwords(trim($token[2]));
-                                            ?>
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        <?php
-                        }
-                        else if(is_numeric(trim($token[0])))
-                        {
-                            if ($total_line == 0 || $total_line % 2 == 0)
-                                echo "<div class=\"row\">";
-                            $str = "<div class=\"col-lg-6 col-md-6 col-sm-6\">
-                                  <div class=\"menu-body menu-left\">
-                                    <div class=\"menu-thumbnail\">
-                                      <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[4]) . "\" alt=\"\">
-                                    </div>
-                                    <div class=\"menu-details\">
-                                      <div class=\"menu-title clearfix\">
-                                        <h4>" . trim($token[1]) . "</h4>
-                                        <span class=\"price\">" . trim($token[3]) . "</span>
+                  <?php
+                  $file = fopen("./listfood/breakfast.txt", "r") or exit("Unable to open file!");
+                  //Output a line of the file until the end is reached
+                  $total_line = 0;
+                  $line_arr = array();
+                  while(!feof($file)) {
+                      $line = fgets($file);
+                      if($line != null)
+                          $line_arr[$total_line++] = $line;
+                  }
+                  fclose($file);
+                  ?>
+                  <?php
+                  for($i = 0; $i < $total_line ; $i++) {//
+                      $line = $line_arr[$i];
+                      if($line != null)
+                      {
+                          $token = explode("-", $line);
+                          if(strtolower(trim($token[0])) == 'title')
+                          {?>
+                              <div class='row'>
+                                  <div class="col-lg-12 col-md-12">
+                                      <div class="section-title text-center">
+                                          <h2 class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[1]));
+                                              ?>
+                                          </h2>
+                                          <p class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[2]));
+                                              ?>
+                                          </p>
                                       </div>
-                                      <div class=\"menu-description\">
-                                        <p>" . trim($token[2]) . "</p>
-                                      </div>
-                                    </div>
                                   </div>
-                                </div>";
 
-                            echo $str;
+                              </div>
+                              <?php
+                          }
+                          else if(is_numeric(trim($token[0]))) //for each product
+                          {?>
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-6 col-sm-6">
+                                      <div class="menu-body menu-left">
+                                          <div class="menu-thumbnail">
+                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                          </div>
+                                          <div class="menu-details">
+                                              <div class="menu-title clearfix">
+                                                  <h4><?php echo trim($token[1]); ?></h4>
+                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
+                                              </div>
+                                              <div class="menu-description">
+                                                  <p><?php echo trim($token[2]); ?></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
 
-                            if ($total_line != 0 && $total_line % 2 != 0) echo "</div>";
-                            $total_line++;
-                        }
+                                  <?php
+                                  if($line_arr[$i+1] != null) {
+                                      $tkn = explode("-", $line_arr[$i + 1]);
+                                      if(is_numeric(trim($token[0]))) {
+                                          ?>
+                                          <div class="col-lg-6 col-md-6 col-sm-6">
+                                              <div class="menu-body menu-left">
+                                                  <div class="menu-thumbnail">
+                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                                  </div>
+                                                  <div class="menu-details">
+                                                      <div class="menu-title clearfix">
+                                                          <h4><?php echo trim($tkn[1]); ?></h4>
+                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
+                                                      </div>
+                                                      <div class="menu-description">
+                                                          <p><?php echo trim($tkn[2]); ?></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <?php
+                                          $i++;
+                                      }
+                                  }
+                                  ?>
+                              </div>
+                          <?php
+                          }
+                      }
+                  }
+                  ?>
 
-                    }
-                }
-                fclose($file);
-
-
-                ?>
-                <!--Add more information -->
-
-                <div class="row">
-
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="menu-body menu-left">
-                            <div class="menu-thumbnail">
-                                <img class="img-responsive center-block" src="images/dish/dump.png" alt="">
-
-                            </div>
-                            <div class="menu-details">
-                                <div class="menu-title clearfix">
-                                    <h4>Additional side dish ( each )</h4>
-
-                                </div>
-                                <div class="menu-description">
-                                    <p>Egg / Smoked salmon <span class="price">2.00</span></p>
-                                </div>
-                                <div class="menu-description">
-                                    <p>Bacon / Avocado <span class="price">2.00</span></p>
-                                </div>
-                                <div class="menu-description">
-                                    <p>Mushroom / Tomato <span class="price">1.50</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <div class="menu-body menu-left">
-                            <div class="menu-thumbnail">
-                                <img class="img-responsive center-block" src="images/dish/dump.png" alt="">
-
-                            </div>
-                            <div class="menu-details">
-                                <div class="menu-title clearfix">
-                                    <h4>KID’s BREAKFAST (2ps)</h4>
-                                    <span class="price">4.5</span>
-                                </div>
-                                <div class="menu-description">
-                                    <p>Toast and Jam </p>
-                                    <p>Toast and Nutella </p>
-                                    <p>Toast and Vegemite </p>
-                                    <p>Toast Ham Cheese </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--END Add more information -->
-            </div>
-
-
-            <div role="tabpanel" class="tab-pane fade" id="tab-2">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/09.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Shrimp and Grits</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>With peppercorns and spiced salt, delicately battered. Tossed in peppercorns and spiced salsa</p>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/10.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Spring Salad</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Salmon fillet in a rich red curry with coconut milk, sweet basil leaves ,pea aubergine, and kaffir lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/11.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Fried Chicken Breast</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>The famous hot, sour and spicy thai soup with king prawn, shimeji mushrooms, lemongrass, and lime leaf</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/12.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Seafood Pasta</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Thai rice noodles stir-fried with bean curd, chinese chives, peanuts and beans sprouts in a special homemade sauce</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/13.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>She Crab Soup</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Stir fried king prawn, tender stem broccoli and asparagus with oyster sauce. Deep-fried mince prawn</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/14.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Black Bean Soup</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Grill boneless corn-fed chicken, marinated in coconut milk, lemongrass, galangal, turmeric and lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/15.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Turkey Melt</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Grill sirloin beef with cracked black pepper. Served with green salad and sweet and sour sauce on the side</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/16.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Lobster Roll</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Tender stem broccoli and asparagus with oyster sauce. Stir fried king prawn. Lime mousse with mango ganache</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="tab-3">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/01.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Caesar Salad</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/02.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Mixed Greens Salad</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>With peppercorns and spiced salt, delicately battered. Tossed in peppercorns and spiced salsa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/03.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Pork Belly</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Salmon fillet in a rich red curry with coconut milk, sweet basil leaves ,pea aubergine, and kaffir lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/04.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Peach Gazpacho</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>The famous hot, sour and spicy thai soup with king prawn, shimeji mushrooms, lemongrass, and lime leaf</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/05.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Veal Chop</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Thai rice noodles stir-fried with bean curd, chinese chives, peanuts and beans sprouts in a special homemade sauce</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/06.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Wood Roasted Salmon</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Stir fried king prawn, tender stem broccoli and asparagus with oyster sauce. Deep-fried mince prawn</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/07.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Pan Seared Chicken</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Grill boneless corn-fed chicken, marinated in coconut milk, lemongrass, galangal, turmeric and lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/08.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Butter Poached Lobster</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Grill sirloin beef with cracked black pepper. Served with green salad and sweet and sour sauce on the side</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div role="tabpanel" class="tab-pane fade active in" id="tab-2">
+
+                  <?php
+                  $file = fopen("./listfood/asian-favourite.txt", "r") or exit("Unable to open file!");
+                  //Output a line of the file until the end is reached
+                  $total_line = 0;
+                  $line_arr = array();
+                  while(!feof($file)) {
+                      $line = fgets($file);
+                      if($line != null)
+                          $line_arr[$total_line++] = $line;
+                  }
+                  fclose($file);
+                  ?>
+                  <?php
+                  for($i = 0; $i < $total_line ; $i++) {//
+                      $line = $line_arr[$i];
+                      if($line != null)
+                      {
+                          $token = explode("|", $line);
+                          if(strtolower(trim($token[0])) == 'title')
+                          {?>
+                              <div class='row'>
+                                  <div class="col-lg-12 col-md-12">
+                                      <div class="section-title text-center">
+                                          <h2 class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[1]));
+                                              ?>
+                                          </h2>
+                                          <p class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[2]));
+                                              ?>
+                                          </p>
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <?php
+                          }
+                          else if(is_numeric(trim($token[0]))) //for each product
+                          {?>
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-6 col-sm-6">
+                                      <div class="menu-body menu-left">
+                                          <div class="menu-thumbnail">
+                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                          </div>
+                                          <div class="menu-details">
+                                              <div class="menu-title clearfix">
+                                                  <h4><?php echo trim($token[1]); ?></h4>
+                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
+                                              </div>
+                                              <div class="menu-description">
+                                                  <p><?php echo trim($token[2]); ?></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <?php
+                                  if($line_arr[$i+1] != "\n") {
+                                      $tkn = explode("|", $line_arr[$i + 1]);
+                                      if(is_numeric(trim($tkn[0]))) {
+                                          ?>
+                                          <div class="col-lg-6 col-md-6 col-sm-6">
+                                              <div class="menu-body menu-left">
+                                                  <div class="menu-thumbnail">
+                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                                  </div>
+                                                  <div class="menu-details">
+                                                      <div class="menu-title clearfix">
+                                                          <h4><?php echo trim($tkn[1]); ?></h4>
+                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
+                                                      </div>
+                                                      <div class="menu-description">
+                                                          <p><?php echo trim($tkn[2]); ?></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <?php
+                                          $i++;
+                                      }
+                                  }
+                                  ?>
+                              </div>
+                              <?php
+                          }
+                      }
+                  }
+                  ?>
+
               </div>
-            </div>
-            <div role="tabpanel" class="tab-pane fade" id="tab-4">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/09.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Raspberry Iced Tea</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Tender stem broccoli and asparagus with oyster sauce. Stir fried king prawn. Lime mousse with mango ganache</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/10.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Black Iced Tea</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>With chopped vegetables, served with plum sauce. Tossed in peppercorns and spiced salt</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/11.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Arnold Palmer</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>With peppercorns and spiced salt, delicately battered. Tossed in peppercorns and spiced salsa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/12.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Coffee</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Salmon fillet in a rich red curry with coconut milk, sweet basil leaves ,pea aubergine, and kaffir lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/13.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Loose Leaf Teas</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>The famous hot, sour and spicy thai soup with king prawn, shimeji mushrooms, lemongrass, and lime leaf</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/14.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Red Bull</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Thai rice noodles stir-fried with bean curd, chinese chives, peanuts and beans sprouts in a special homemade sauce</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/15.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>San Pellegrino</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Stir fried king prawn, tender stem broccoli and asparagus with oyster sauce. Deep-fried mince prawn</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="menu-body menu-left">
-                    <div class="menu-thumbnail">
-                      <img class="img-responsive center-block" src="images/dish/16.png" alt="">
-                    </div>
-                    <div class="menu-details">
-                      <div class="menu-title clearfix">
-                        <h4>Saratoga</h4>
-                        <span class="price">$99.0</span>
-                      </div>
-                      <div class="menu-description">
-                        <p>Grill boneless corn-fed chicken, marinated in coconut milk, lemongrass, galangal, turmeric and lime leaves</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div role="tabpanel" class="tab-pane fade active in" id="tab-3">
+
+                  <?php
+                  $file = fopen("./listfood/small-treat.txt", "r") or exit("Unable to open file!");
+                  //Output a line of the file until the end is reached
+                  $total_line = 0;
+                  $line_arr = array();
+                  while(!feof($file)) {
+                      $line = fgets($file);
+                      if($line != null)
+                          $line_arr[$total_line++] = $line;
+                  }
+                  fclose($file);
+                  ?>
+                  <?php
+                  for($i = 0; $i < $total_line ; $i++) {//
+                      $line = $line_arr[$i];
+                      if($line != null)
+                      {
+                          $token = explode("|", $line);
+                          if(strtolower(trim($token[0])) == 'title')
+                          {?>
+                              <div class='row'>
+                                  <div class="col-lg-12 col-md-12">
+                                      <div class="section-title text-center">
+                                          <h2 class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[1]));
+                                              ?>
+                                          </h2>
+                                          <p class="text-white">
+                                              <?php
+                                              echo ucwords(trim($token[2]));
+                                              ?>
+                                          </p>
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <?php
+                          }
+                          else if(is_numeric(trim($token[0]))) //for each product
+                          {?>
+                              <div class="row">
+                                  <div class="col-lg-6 col-md-6 col-sm-6">
+                                      <div class="menu-body menu-left">
+                                          <div class="menu-thumbnail">
+                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                          </div>
+                                          <div class="menu-details">
+                                              <div class="menu-title clearfix">
+                                                  <h4><?php echo trim($token[1]); ?></h4>
+                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
+                                              </div>
+                                              <div class="menu-description">
+                                                  <p><?php echo trim($token[2]); ?></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <?php
+                                  if($line_arr[$i+1] != "\n") {
+                                      $tkn = explode("|", $line_arr[$i + 1]);
+                                      if(is_numeric(trim($tkn[0]))) {
+                                          ?>
+                                          <div class="col-lg-6 col-md-6 col-sm-6">
+                                              <div class="menu-body menu-left">
+                                                  <div class="menu-thumbnail">
+                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                                  </div>
+                                                  <div class="menu-details">
+                                                      <div class="menu-title clearfix">
+                                                          <h4><?php echo trim($tkn[1]); ?></h4>
+                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
+                                                      </div>
+                                                      <div class="menu-description">
+                                                          <p><?php echo trim($tkn[2]); ?></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <?php
+                                          $i++;
+                                      }
+                                  }
+                                  ?>
+                              </div>
+                              <?php
+                          }
+                      }
+                  }
+                  ?>
+
               </div>
-            </div>
           </div>
         </div>
       </div>
