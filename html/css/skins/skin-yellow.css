@@ -18,7 +18,7 @@ NOTE: This is color stylesheet of Color Scheme.
 ::selection { background: #ffb400; color: #fff; text-shadow: none; }
 
 /*.button*/
- .button, .button.black:before, .button.gray:before, { background: #ffb400; }
+ .button, .button.black:before, .button.gray:before { background: #ffb400; }
  .tp-caption.button, .tp-caption.button.black:before, .tp-caption.button.gray:before { background: #ffb400 !important; }
  .tp-caption.button.white { background: #ffffff !important; }
  .tp-caption.button.white, .tp-caption.button.white:hover, .tp-caption.button.white:focus, .tp-caption.button.white:before { color: #ffb400 !important; }

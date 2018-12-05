@@ -85,7 +85,7 @@ Page section margin padding
 /*************************
     Section title 
 ***********************/
-.section-title { margin-bottom: 50px; padding: 0 100px; }
+.section-title { margin-bottom: 50px; /*padding: 0 100px; */}
 .section-title h2 { font-size: 50px; padding-bottom: 15px; font-weight: 700; position: relative; margin-bottom: 10px; }
 .section-title h2:before { position: absolute; content: ""; width: 40px; height: 2px; background: #db2d2e; left: 50%; margin-left: -20px; bottom: 0px; }
 .section-title p { font-style: italic; font-size: 14px; display: block; margin-top: 10px; margin-bottom: 0px; }
@@ -952,7 +952,7 @@ figure#mobile { display: none; }
 .inner-intro .container { display: table; height: 100%; position: relative; }
 .inner-intro span { text-transform: capitalize; }
 .inner-intro h1 { text-transform: capitalize; }
-.intro-title { display: table-cell; vertical-align: bottom; }
+.intro-title { display: table-cell; vertical-align: middle; }
 .intro-title p { font-size: 14px; text-transform: capitalize; }
 ul.page-breadcrumb li span { color: #fff; font-size: 14px; text-transform: capitalize; }
 ul.page-breadcrumb { padding-top: 60px; padding-bottom: 25px; }

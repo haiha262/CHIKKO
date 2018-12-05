@@ -1,10 +1,10 @@
-Title - Chikko’s Mini Skillet Breakfast - All baked mini skillet egg served with mini Brioche bun
+Title | Chikko’s Mini Skillet Breakfast | All baked mini skillet egg served with mini Brioche bun
 
-1 - Skillet Basic - Fried eggs, heavy cream, parmesan cheese - 8.95 - 01.png
-2 - Skillet Avocado - Fried eggs, avocado, parmesan cheese - 9.95 - 02.png
-3 - Skillet Fried - Fried eggs, bacon, tomatoes, mushroom - 10.95 - 03.png
-4 - Skillet Salmon - Scramble egg, heavy cream, smoked salmon, parmesan cheese - 11.95 - 04.png
-5 - Skillet Special - Fried eggs, heavy cream, bacon, smoked salmon, avocado, wilted spinach and hollandaise sauce - 14.95 - 05.png
-6 - Omelette - Egg omelette filled with ham, cheese, salad and tomato sauce -9.95 - 01.png
-7 - Poached Egg - Poached eggs, smoked salmon, wilted spinach served with mini Brioche bun -10.95 - 01.png
-8 - Egg Benedict - Poached eggs, house hollandaise sauce, bacon, salad served with mini Brioche bun- 14.95 - 01.png
+1 | Skillet Basic | Fried eggs, heavy cream, parmesan cheese | 8.95 | 01.png
+2 | Skillet Avocado | Fried eggs, avocado, parmesan cheese | 9.95 | 02.png
+3 | Skillet Fried | Fried eggs, bacon, tomatoes, mushroom | 10.95 | 03.png
+4 | Skillet Salmon | Scramble egg, heavy cream, smoked salmon, parmesan cheese | 11.95 | 04.png
+5 | Skillet Special | Fried eggs, heavy cream, bacon, smoked salmon, avocado, wilted spinach and hollandaise sauce | 14.95 | 05.png
+6 | Omelette | Egg omelette filled with ham, cheese, salad and tomato sauce |9.95 | 06.png
+7 | Poached Egg | Poached eggs, smoked salmon, wilted spinach served with mini Brioche bun |10.95 | 01.png
+8 | Egg Benedict | Poached eggs, house hollandaise sauce, bacon, salad served with mini Brioche bun| 14.95 | 02.png

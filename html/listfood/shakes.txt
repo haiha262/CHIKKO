@@ -1,0 +1,13 @@
+TITLE | SHAKES |  Its not just a thick shake, we take it seriously
+1 |  Baby ChinoShake | Vanilla ice cream, fresh cream, toasted marshmallows, MMs, chocolate sauce  | 8.95 | 01.png
+1 |  NutellaOreoShake  | Chocolate ice cream, nutella,fresh cream, Oreo, chocolate sauce| 8.95 | 01.png
+1 |  Strawberry Shake  | Berries ice cream, Fresh cream, timtam,white chocolate, berries coulis, strawberries | 8.95 | 01.png
+1 |  Bubble WaffleShake  | Vanilla ice cream, fresh cream, bubble waffle, caramel and chocolate sauce  | 12.95 | 01.png
+1 |  Banana Shake  | Vanilla ice cream, fresh cream, caramelized banana, chocolate, chocolate sauce  | 8.95 | 01.png
+1 |  Salted Caramel | Salted caramel ice cream, fresh cream, timtam, apple slices, caramel sauce  | 9.95 | 01.png
+1 |  Lemon Cheese Cake | Vanilla ice cream, fresh lemon, lemon cheese cake, white chocolate, timtam, passion fruit and caramel sauce  | 14.95  | 01.png
+1 |   Chocolate Delights  | Chocolate ice cream, fresh cream, chocolate tart or cake, timtam, chocolate sauce | 13.95  | 01.png
+1 |   Fairy Shake | Vanilla ice cream, boysenberries ice cream, fresh cream, waffle cone, fairy floss, fruity cake chocolate strawberries sauce| 14.95  | 01.png
+1 |  Matcha Shake | Green tea ice cream, fresh cream, kitkat, bubble waffle, caramel and chocolate sauce | 13.95  | 01.png
+1 |  Pavlova Shake | Vanilla ice cream, boysenberries ice cream, fresh cream, fresh fruit, meringue, strawberries sauce | 12.95  | 01.png
+1 |  Cookie Shake | Cookie and cream ice cream, white choc biscuit, fresh cream, dark chocolate chip and chocolate sauce | 9.95  | 01.png

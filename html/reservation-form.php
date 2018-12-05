@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="HTML5 Template" />
-<meta name="description" content="The Zayka - Multipurpose Restaurant, Food & Cafe HTML5 Template" />
-<meta name="author" content="potenzaglobalsolutions.com" />
+<meta name="keywords" content="Chikko" />
+<meta name="description" content="Chikko - Boutique Coffee and Kitchen" />
+<meta name="author" content="tran multimedia" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title> Chikko - Boutique Coffee and Kitchen</title>
 
@@ -76,11 +76,6 @@
     <div class="row text-center intro-title">
       <h1 class="text-orange">Reservation</h1>
       <p class="text-white">Make online reservation</p>
-      <ul class="page-breadcrumb">
-        <li><a href=""><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-        <li><a href="">reservation</a> <i class="fa fa-angle-double-right"></i></li>
-        <li><span>Reservation form</span></li>
-     </ul>
     </div>
   </div>
 </div>
@@ -171,7 +166,7 @@
               </div>
               </div>
             </div>
-            <div class="bottom-text text-center">You can also call : + <span class="text-orange"><strong>(03) 6244 4190 </strong></span> to make a reservation.</div>
+             <div class="bottom-text text-center">You can also call : + <span class="text-orange"><strong><a href="tel:(03) 6244 4190">(03) 6244 4190 </a></strong></span> to make a reservation.</div>
             </div> 
          </form>
       </div>

@@ -1,0 +1,7 @@
+ TITLE | ASIAN GRILL BAR | All Grill Dishes served with steam rice and salad, alternatively <br> add $1 extra for potato wedge and salad.
+1 |  Grilled Lamb Chop |  Grilled bbq lamb chops served with steam rice and salad | 17.95 | 01.png
+1 |  Grilled Chicken |  Steamed rice served with grilled chicken thigh fillet, salad and Vietnamese dressing | 15.95 | 01.png
+1 |  Pork Chop on Rice | Steamed rice served with grilled pork chop, fried egg and Vietnamese dressing | 17.95 | 01.png
+1 |  Beef Short Ribs |  Grilled beef short ribs steak served with steamed rice and salad |  17.95 | 01.png
+1 |  Grilled Chicken Skewers | Grilled chicken skewers served with iceberg lettuce, rice vermicelli noodle carrot, mint, house hoisin and peanut sauce | 17.95 | 01.png
+1 |  BBQ Meat Balls | BBQ meatball skewers served with iceberg lettuce, rice vermicelli noodle carrot, mint, house hoisin and peanut sauce | 17.95 | 01.png

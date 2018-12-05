@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="HTML5 Template" />
-<meta name="description" content="The Zayka - Multipurpose Restaurant, Food & Cafe HTML5 Template" />
-<meta name="author" content="potenzaglobalsolutions.com" />
+<meta name="keywords" content="Chikko " />
+<meta name="description" content="Chikko - Boutique Coffee and Kitchen" />
+<meta name="author" content="tran multimedia" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title> Chikko - Boutique Coffee and Kitchen</title>
 
@@ -68,11 +68,11 @@
      <div class="row text-center intro-title">
       <h1 class="text-orange">Contact Us</h1>
       <p class="text-white">We Know The Secret Of Your Success</p>
-      <ul class="page-breadcrumb">
-        <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>
-        <li><a href="#">pages</a> <i class="fa fa-angle-double-right"></i></li>
-        <li><span>Contact</span></li>
-     </ul>
+<!--      <ul class="page-breadcrumb">-->
+<!--        <li><a href="#"><i class="fa fa-home"></i> Home</a> <i class="fa fa-angle-double-right"></i></li>-->
+<!--        <li><a href="#">pages</a> <i class="fa fa-angle-double-right"></i></li>-->
+<!--        <li><span>Contact</span></li>-->
+<!--     </ul>-->
      </div>
   </div>
 </div>
@@ -109,7 +109,7 @@
          <div class="contact-box text-center">
             <i class="fa fa-phone"></i>
             <h5>Phone</h5>
-            <p> (03) 6244 4190 </p>
+             <p> <a href="tel:(03) 6244 4190">(03) 6244 4190 </a></p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
@@ -180,7 +180,7 @@
 
 <section class="contact-map">
   <div class="container-fluid">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3224.017231421863!2d-79.43780268425046!3d36.09306798010035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88532bae09664ccb%3A0xaa6b8f98d3fb8135!2s220+E+Front+St%2C+Burlington%2C+NC+27215%2C+USA!5e0!3m2!1sen!2sin!4v1475045272926" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11697.033879381232!2d147.3682196!3d-42.8673884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b0de57e6af85b43!2sChikko+Cafe+Eastlands!5e0!3m2!1sen!2sau!4v1542689312873" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
   </div>
  </section>
  

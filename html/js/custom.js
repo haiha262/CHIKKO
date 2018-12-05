@@ -339,7 +339,7 @@ NOTE:
   POTENZA.countdownTimer = function () {
       if ($countdownTimer.exists()) {
             $countdownTimer.downCount({
-                date: '10/05/2019 12:00:00',
+                date: '01/01/2019 12:00:00',
                 offset: 400
             });
       }

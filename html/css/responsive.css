@@ -41,7 +41,7 @@ Design and Developed by: potenzaglobalsolutions.com
 /* Home 1 */
 .open.overlay_search .form_search-wrap { min-width: 80%; }
 .book-content{ padding: 40px; }
-.book-content .section-title { padding: 0 50px; }
+/*.book-content .section-title { padding: 0 50px; }*/
 .pricing-grid .pricing-table{ margin-left: 0; margin-right: 0; }
 .counter .object-bottom .object-left { display: none; }
 .our-menu .menu-body { margin-bottom: 50px; }

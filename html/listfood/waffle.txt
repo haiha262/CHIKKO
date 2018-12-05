@@ -1,0 +1,8 @@
+ TITLE | Delicious Bubble Waffle
+1 |  Nutella Waffle | | 7.95 | 01.png
+1 |  Vanilla Waffle | | 8.95 | 01.png
+1 |  Mango Waffle | | 8.95 | 01.png
+1 |  Berries Waffle | | 11.95 | 01.png
+1 |  Chocolate Waffle | | 8.95 | 01.png
+1 |  Banana Waffle | | 11.95 | 01.png
+1 |  Matcha Waffle | | 8.95 | 01.png

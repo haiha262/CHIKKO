@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="HTML5 Template" />
+<meta name="keywords" content="Chikko" />
 <meta name="description" content="Chikko - Boutique Coffee and Kitchen" />
-<meta name="author" content="potenzaglobalsolutions.com" />
+<meta name="author" content="tran multimedia" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title> Chikko - Boutique Coffee and Kitchen</title>
 <!-- Favicon -->
@@ -575,300 +575,134 @@ our-menu -->
           <!-- Nav tabs -->
           <ul class="tabs-link text-center">
             <li class="active"><a href="#tab-1" data-toggle="tab" aria-expanded="false"><i class="glyph-icon flaticon-hot-mug-doodle"></i> Breakfast</a></li>
-            <li><a href="#tab-2" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> ASIAN FAVOURITE</a></li>
-            <li><a href="#tab-3" data-toggle="tab"><i class="glyph-icon flaticon-food-9"></i> Dinner</a></li>
-            <li><a href="#tab-4" data-toggle="tab"><i class="glyph-icon flaticon-foamy-beer-jar"></i> Drinks</a></li>
-            <li><a href="#tab-5" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> ASIAN FAVOURITE</a></li>
-            <li><a href="#tab-6" data-toggle="tab"><i class="glyph-icon flaticon-food-9"></i> Dinner</a></li>
-            <li><a href="#tab-7" data-toggle="tab"><i class="glyph-icon flaticon-foamy-beer-jar"></i> Drinks</a></li>
+            <li><a href="#tab-2" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-57"></i> ASIAN FAVOURITE</a></li>
+            <li><a href="#tab-3" data-toggle="tab"><i class="glyph-icon flaticon-long-sandwich"></i> Small Treat</a></li>
+            <li><a href="#tab-4" data-toggle="tab"><i class="glyph-icon flaticon-appetizers-bowl"></i> Soup</a></li>
+            <li><a href="#tab-5" data-toggle="tab" aria-expanded="true"><i class="glyph-icon flaticon-food-36"></i> WOK OF YOUR CHOICE</a></li>
+            <li><a href="#tab-6" data-toggle="tab"><i class="glyph-icon flaticon-food-9"></i> Stir Fried</a></li>
+            <li><a href="#tab-7" data-toggle="tab"><i class="glyph-icon flaticon-food-21"></i> Vegetarian</a></li>
+            <li><a href="#tab-8" data-toggle="tab"><i class="glyph-icon flaticon-food-58"></i> CHEF SPECIAL</a></li>
+            <li><a href="#tab-9" data-toggle="tab"><i class="glyph-icon flaticon-french-fries-box"></i> KID MENU</a></li>
+            <li><a href="#tab-10" data-toggle="tab"><i class="glyph-icon flaticon-foamy-beer-jar"></i> Shakes</a></li>
+            <li><a href="#tab-11" data-toggle="tab"><i class="glyph-icon flaticon-food-54"></i> ASIAN GRILL BAR</a></li>
+            <li><a href="#tab-12" data-toggle="tab"><i class="glyph-icon flaticon-crepe-and-cream"></i> Waffle</a></li>
           </ul>
           <!-- Tab panes -->
           <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade in" id="tab-1">
-
-                  <?php
-                  $file = fopen("./listfood/breakfast.txt", "r") or exit("Unable to open file!");
-                  //Output a line of the file until the end is reached
-                  $total_line = 0;
-                  $line_arr = array();
-                  while(!feof($file)) {
-                      $line = fgets($file);
-                      if($line != null)
-                          $line_arr[$total_line++] = $line;
-                  }
-                  fclose($file);
+              <?php
+              print_tab("breakfast.txt","tab-1", "active");
+              print_tab("asian-favourite.txt","tab-2","");
+              print_tab("small-treat.txt","tab-3","");
+              print_tab("soup-in-a-bowl.txt","tab-4","");
+              print_tab("wok.txt","tab-5","");
+              print_tab("stir-fried.txt","tab-6","");
+              print_tab("vegetarian.txt","tab-7","");
+              print_tab("chef.txt","tab-8","");
+              print_tab("kids.txt","tab-9","");
+              print_tab("shakes.txt","tab-10","");
+              print_tab("asian-grill.txt","tab-11","");
+              print_tab("waffle.txt","tab-12","");
+              function print_tab($file_source,$tabId, $active = "")
+              {
                   ?>
-                  <?php
-                  for($i = 0; $i < $total_line ; $i++) {//
-                      $line = $line_arr[$i];
-                      if($line != null)
-                      {
-                          $token = explode("-", $line);
-                          if(strtolower(trim($token[0])) == 'title')
-                          {?>
-                              <div class='row'>
-                                  <div class="col-lg-12 col-md-12">
-                                      <div class="section-title text-center">
-                                          <h2 class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[1]));
-                                              ?>
-                                          </h2>
-                                          <p class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[2]));
-                                              ?>
-                                          </p>
-                                      </div>
-                                  </div>
+                  <div role="tabpanel" class="tab-pane fade  <?php echo $active; ?> in" id="<?php echo $tabId; ?>">
 
-                              </div>
-                              <?php
-                          }
-                          else if(is_numeric(trim($token[0]))) //for each product
-                          {?>
-                              <div class="row">
-                                  <div class="col-lg-6 col-md-6 col-sm-6">
-                                      <div class="menu-body menu-left">
-                                          <div class="menu-thumbnail">
-                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
-                                          </div>
-                                          <div class="menu-details">
-                                              <div class="menu-title clearfix">
-                                                  <h4><?php echo trim($token[1]); ?></h4>
-                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
-                                              </div>
-                                              <div class="menu-description">
-                                                  <p><?php echo trim($token[2]); ?></p>
-                                              </div>
+                      <?php
+                      $file = fopen("./listfood/".$file_source, "r") or exit("Unable to open file!");
+                      //Output a line of the file until the end is reached
+                      $total_line = 0;
+                      $line_arr = array();
+                      while(!feof($file)) {
+                          $line = fgets($file);
+                          if($line != null)
+                              $line_arr[$total_line++] = $line;
+                      }
+                      fclose($file);
+                      ?>
+                      <?php
+                      for($i = 0; $i < $total_line ; $i++) {//
+                          $line = $line_arr[$i];
+                          if($line != null)
+                          {
+                              $token = explode("|", $line);
+                              if(strtolower(trim($token[0])) == 'title')
+                              {?>
+                                  <div class='row'>
+                                      <div class="col-lg-12 col-md-12">
+                                          <div class="section-title text-center">
+                                              <h2 class="text-white">
+                                                  <?php
+                                                  echo ucwords(trim($token[1]));
+                                                  ?>
+                                              </h2>
+                                              <p class="text-white">
+                                                  <?php
+                                                  echo ucwords(trim($token[2]));
+                                                  ?>
+                                              </p>
                                           </div>
                                       </div>
-                                  </div>
 
+                                  </div>
                                   <?php
-                                  if($line_arr[$i+1] != null) {
-                                      $tkn = explode("-", $line_arr[$i + 1]);
-                                      if(is_numeric(trim($token[0]))) {
-                                          ?>
-                                          <div class="col-lg-6 col-md-6 col-sm-6">
-                                              <div class="menu-body menu-left">
-                                                  <div class="menu-thumbnail">
-                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                              }
+                              else if(is_numeric(trim($token[0]))) //for each product
+                              {?>
+                                  <div class="row">
+                                      <div class="col-lg-6 col-md-6 col-sm-6">
+                                          <div class="menu-body menu-left">
+                                              <div class="menu-thumbnail">
+                                                  <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                              </div>
+                                              <div class="menu-details">
+                                                  <div class="menu-title clearfix">
+                                                      <h4><?php echo trim($token[1]); ?></h4>
+                                                      <span class="price">$<?php echo trim($token[3]); ?></span>
                                                   </div>
-                                                  <div class="menu-details">
-                                                      <div class="menu-title clearfix">
-                                                          <h4><?php echo trim($tkn[1]); ?></h4>
-                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
-                                                      </div>
-                                                      <div class="menu-description">
-                                                          <p><?php echo trim($tkn[2]); ?></p>
-                                                      </div>
+                                                  <div class="menu-description">
+                                                      <p><?php echo trim($token[2]); ?></p>
                                                   </div>
                                               </div>
                                           </div>
-                                          <?php
-                                          $i++;
+                                      </div>
+
+                                      <?php
+                                      if($line_arr[$i+1] != "\n") {
+                                          $tkn = explode("|", $line_arr[$i + 1]);
+                                          if(is_numeric(trim($tkn[0]))) {
+                                              ?>
+                                              <div class="col-lg-6 col-md-6 col-sm-6">
+                                                  <div class="menu-body menu-left">
+                                                      <div class="menu-thumbnail">
+                                                          <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                                      </div>
+                                                      <div class="menu-details">
+                                                          <div class="menu-title clearfix">
+                                                              <h4><?php echo trim($tkn[1]); ?></h4>
+                                                              <span class="price">$<?php echo trim($tkn[3]); ?></span>
+                                                          </div>
+                                                          <div class="menu-description">
+                                                              <p><?php echo trim($tkn[2]); ?></p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <?php
+                                              $i++;
+                                          }
                                       }
-                                  }
-                                  ?>
-                              </div>
-                          <?php
+                                      ?>
+                                  </div>
+                                  <?php
+                              }
                           }
                       }
-                  }
-                  ?>
+                      ?>
 
-              </div>
-              <div role="tabpanel" class="tab-pane fade active in" id="tab-2">
-
-                  <?php
-                  $file = fopen("./listfood/asian-favourite.txt", "r") or exit("Unable to open file!");
-                  //Output a line of the file until the end is reached
-                  $total_line = 0;
-                  $line_arr = array();
-                  while(!feof($file)) {
-                      $line = fgets($file);
-                      if($line != null)
-                          $line_arr[$total_line++] = $line;
-                  }
-                  fclose($file);
-                  ?>
-                  <?php
-                  for($i = 0; $i < $total_line ; $i++) {//
-                      $line = $line_arr[$i];
-                      if($line != null)
-                      {
-                          $token = explode("|", $line);
-                          if(strtolower(trim($token[0])) == 'title')
-                          {?>
-                              <div class='row'>
-                                  <div class="col-lg-12 col-md-12">
-                                      <div class="section-title text-center">
-                                          <h2 class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[1]));
-                                              ?>
-                                          </h2>
-                                          <p class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[2]));
-                                              ?>
-                                          </p>
-                                      </div>
-                                  </div>
-
-                              </div>
-                              <?php
-                          }
-                          else if(is_numeric(trim($token[0]))) //for each product
-                          {?>
-                              <div class="row">
-                                  <div class="col-lg-6 col-md-6 col-sm-6">
-                                      <div class="menu-body menu-left">
-                                          <div class="menu-thumbnail">
-                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
-                                          </div>
-                                          <div class="menu-details">
-                                              <div class="menu-title clearfix">
-                                                  <h4><?php echo trim($token[1]); ?></h4>
-                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
-                                              </div>
-                                              <div class="menu-description">
-                                                  <p><?php echo trim($token[2]); ?></p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <?php
-                                  if($line_arr[$i+1] != "\n") {
-                                      $tkn = explode("|", $line_arr[$i + 1]);
-                                      if(is_numeric(trim($tkn[0]))) {
-                                          ?>
-                                          <div class="col-lg-6 col-md-6 col-sm-6">
-                                              <div class="menu-body menu-left">
-                                                  <div class="menu-thumbnail">
-                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
-                                                  </div>
-                                                  <div class="menu-details">
-                                                      <div class="menu-title clearfix">
-                                                          <h4><?php echo trim($tkn[1]); ?></h4>
-                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
-                                                      </div>
-                                                      <div class="menu-description">
-                                                          <p><?php echo trim($tkn[2]); ?></p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <?php
-                                          $i++;
-                                      }
-                                  }
-                                  ?>
-                              </div>
-                              <?php
-                          }
-                      }
-                  }
-                  ?>
-
-              </div>
-              <div role="tabpanel" class="tab-pane fade active in" id="tab-3">
-
-                  <?php
-                  $file = fopen("./listfood/small-treat.txt", "r") or exit("Unable to open file!");
-                  //Output a line of the file until the end is reached
-                  $total_line = 0;
-                  $line_arr = array();
-                  while(!feof($file)) {
-                      $line = fgets($file);
-                      if($line != null)
-                          $line_arr[$total_line++] = $line;
-                  }
-                  fclose($file);
-                  ?>
-                  <?php
-                  for($i = 0; $i < $total_line ; $i++) {//
-                      $line = $line_arr[$i];
-                      if($line != null)
-                      {
-                          $token = explode("|", $line);
-                          if(strtolower(trim($token[0])) == 'title')
-                          {?>
-                              <div class='row'>
-                                  <div class="col-lg-12 col-md-12">
-                                      <div class="section-title text-center">
-                                          <h2 class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[1]));
-                                              ?>
-                                          </h2>
-                                          <p class="text-white">
-                                              <?php
-                                              echo ucwords(trim($token[2]));
-                                              ?>
-                                          </p>
-                                      </div>
-                                  </div>
-
-                              </div>
-                              <?php
-                          }
-                          else if(is_numeric(trim($token[0]))) //for each product
-                          {?>
-                              <div class="row">
-                                  <div class="col-lg-6 col-md-6 col-sm-6">
-                                      <div class="menu-body menu-left">
-                                          <div class="menu-thumbnail">
-                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
-                                          </div>
-                                          <div class="menu-details">
-                                              <div class="menu-title clearfix">
-                                                  <h4><?php echo trim($token[1]); ?></h4>
-                                                  <span class="price">$<?php echo trim($token[3]); ?></span>
-                                              </div>
-                                              <div class="menu-description">
-                                                  <p><?php echo trim($token[2]); ?></p>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <?php
-                                  if($line_arr[$i+1] != "\n") {
-                                      $tkn = explode("|", $line_arr[$i + 1]);
-                                      if(is_numeric(trim($tkn[0]))) {
-                                          ?>
-                                          <div class="col-lg-6 col-md-6 col-sm-6">
-                                              <div class="menu-body menu-left">
-                                                  <div class="menu-thumbnail">
-                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
-                                                  </div>
-                                                  <div class="menu-details">
-                                                      <div class="menu-title clearfix">
-                                                          <h4><?php echo trim($tkn[1]); ?></h4>
-                                                          <span class="price">$<?php echo trim($tkn[3]); ?></span>
-                                                      </div>
-                                                      <div class="menu-description">
-                                                          <p><?php echo trim($tkn[2]); ?></p>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <?php
-                                          $i++;
-                                      }
-                                  }
-                                  ?>
-                              </div>
-                              <?php
-                          }
-                      }
-                  }
-                  ?>
-
-              </div>
+                  </div>
+              <?php
+              }
+?>
           </div>
         </div>
       </div>
