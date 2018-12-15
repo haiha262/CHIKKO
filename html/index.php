@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,6 +48,8 @@
 <!-- skin color -->
 <link rel="stylesheet" href="css/skins/skin-dark-green.css">
 
+<!--FancyBox-->
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
 
 </head>
 <body>
@@ -538,7 +540,9 @@ special-menu -->
                       $str = "<div class=\"item\">
                               <div class=\"menu-body menu-center\">
                                 <div class=\"menu-thumbnail\">
+                                   <a href=\"images/dish/" . trim($token[3]) . "\">
                                   <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[3]) . "\" alt=\"\">
+                                  </a>
                                 </div>
                                 <div class=\"menu-details\">
                                   <div class=\"menu-title clearfix\">
@@ -652,7 +656,9 @@ our-menu -->
                                       <div class="col-lg-6 col-md-6 col-sm-6">
                                           <div class="menu-body menu-left">
                                               <div class="menu-thumbnail">
-                                                  <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                                  <a href="images/dish/<?php echo trim($token[4]); ?>">
+                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                                  </a>
                                               </div>
                                               <div class="menu-details">
                                                   <div class="menu-title clearfix">
@@ -674,7 +680,9 @@ our-menu -->
                                               <div class="col-lg-6 col-md-6 col-sm-6">
                                                   <div class="menu-body menu-left">
                                                       <div class="menu-thumbnail">
-                                                          <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                                          <a href="images/dish/<?php echo trim($tkn[4]); ?>">
+                                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">                                                          </a>
+
                                                       </div>
                                                       <div class="menu-details">
                                                           <div class="menu-title clearfix">
@@ -879,5 +887,11 @@ The following part can be removed on Server for On Demand Loading) -->
 
 <!-- mega menu -->
 <script type="text/javascript" src="js/mega-menu/mega_menu.js"></script>
+
+
+<!--Fancybox-->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
+
+
 </body>
 </html>

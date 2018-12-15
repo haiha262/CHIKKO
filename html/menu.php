@@ -35,6 +35,9 @@
 
     <!-- skin color -->
     <link rel="stylesheet" href="css/skins/skin-dark-green.css">
+    <!--FancyBox-->
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+
 </head>
 <body>
 
@@ -173,7 +176,9 @@ function print_tab($file_source,$tabId)
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class="menu-body menu-left menu-white">
                             <div class="menu-thumbnail">
+                                <a href="images/dish/<?php echo trim($token[4]); ?>">
                                 <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                </a>
                             </div>
                             <div class="menu-details">
                                 <div class="menu-title clearfix">
@@ -195,7 +200,9 @@ function print_tab($file_source,$tabId)
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="menu-body menu-left menu-white">
                                     <div class="menu-thumbnail">
+                                        <a href="images/dish/<?php echo trim($tkn[4]); ?>">
                                         <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">
+                                        </a>
                                     </div>
                                     <div class="menu-details">
                                         <div class="menu-title clearfix">
@@ -259,6 +266,8 @@ menu-list-bg -->
 <script type="text/javascript" src="js/load-menu.js"></script>
 
 <script type="text/javascript" src="js/custom.js"></script>
+<!--Fancybox-->
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
 
 </body>
 </html>

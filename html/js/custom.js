@@ -412,6 +412,14 @@ NOTE:
         POTENZA.accordion(),
         POTENZA.countdownTimer(),
         POTENZA.contactform(),
-        POTENZA.niceScroll();     
+        POTENZA.niceScroll();
+
+        $(".menu-thumbnail a").fancybox({
+            'padding'			: 20,
+            'autoScale'			: true,
+
+        });
      });
+
+
 })(jQuery);
