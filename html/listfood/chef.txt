@@ -1,6 +1,6 @@
 TITLE | CHEF SPECIAL |
-1 |  Battered Chicken | Lightly battered chicken tight fillet pieces tossed in house Spicy Sauce or Sweet and Sour sauce, served with steamed rice and salad  | 16.95 | 02.png
-1 |  Crispy Chicken | Lightly battered deep fried chicken pieces (bone) tossed in house special sweet and spicy soy sauce served with steamed rice and Asian coleslaw  | 16.95 | 03.png
+1 |  Battered Chicken | Lightly battered chicken tight fillet pieces tossed in house Spicy Sauce or Sweet and Sour sauce, served with steamed rice and salad  | 16.95 | Sweet n Sour chicken.png
+1 |  Crispy Chicken | Lightly battered deep fried chicken pieces (bone) tossed in house special sweet and spicy soy sauce served with steamed rice and Asian coleslaw  | 16.95 | Crispy Chicken.png
 1 |  Salted Pepper Calamari | Lightly battered calamari tossed in house special salt and pepper seasoning served with lettuce, carrot, bean sprouts, onion, capsicum and chili  | 17.95 | 06.png
-1 |  Honey Prawn | Lightly battered large prawns tossed in house honey sauce served with deep fried noodle and cashew nuts  | 18.95 | 04.png
+1 |  Honey Prawn | Lightly battered large prawns tossed in house honey sauce served with deep fried noodle and cashew nuts  | 18.95 | honey prawn.png
 1 |  Vietnamese Vegetable Curry | Traditional Vietnamese vegetable curry slow cooked in coconut cream and served with steamed rice  | 16.95 | 05.png
