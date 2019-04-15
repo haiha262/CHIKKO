@@ -1,13 +1,19 @@
 TITLE | SMALL TREAT |
 
-1 | Rice Paper Rolls Chicken / Avocado / Tofu – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 7.00 | 04.png
-1 | Rice Paper Rolls Smoked Salmon / Prawn – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 8.00 | 03.png
+1 | Rice Paper Rolls Chicken – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 7.00 | Rice Paper Rolls Chicken.png
+1 | Rice Paper Rolls Chicken and Avocado – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 7.00 | Rice Paper Rolls Chicken and Avocado.png
+1 | Rice Paper Rolls Avocado – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 7.00 | Rice Paper Rolls Avocado.png
+1 | Rice Paper Rolls Tofu – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 7.00 | Rice Paper Rolls Tofu.png
+1 | Rice Paper Rolls Prawn – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 8.00 | Rice Paper Rolls Prawn.png
+1 | Rice Paper Rolls Smoked Salmon – 2pcs  | Filling includes lettuce, pickled carrot, coriander, mint, rice noodles and your choice of meat, served with hoisin peanut sauce | 8.00 | Rice Paper Rolls Smoked Salmon.png
+
 2 | Spring Rolls– 4pcs (chicken or vegetarian) | House made spring rolls served with lettuce, pickled carrot and marinated fish sauce | 7.00 | Spring Rolls.png
-3 | Roti Wrap | Grilled Chicken / Pork / Tofu wrapped in roti bread with mayo, salad, cheese and sweet chili sauce | 7.00 | 01.png
+3 | Roti Wrap | Grilled Chicken / Pork / Tofu wrapped in roti bread with mayo, salad, cheese and sweet chili sauce | 7.00 | roti wrap.png
 4 | Banh Mi - Grilled Chicken / Pork / Tofu | Vietnamese bread roll filled with pate, mayo, pickled carrot, cucumber, coriander spring onion, hoisin and peanut sauce | 7.00 | banh mi.png
 4 | Banh Mi - Roasted Pork Belly / Meat Balls | Vietnamese bread roll filled with pate, mayo, pickled carrot, cucumber, coriander spring onion, hoisin and peanut sauce | 8.00 | banh mi roasted pork.png
-5 |  Deep Fried Wonton - 10pcs | House made pork and prawn filling served with sweet chili sauce | 10.00 | 03.png
-6 |  Boiled or Pan fried Dumpling – 10pcs | House made chicken filling served with Soy sauce | 10.00 | 02.png
+5 |  Deep Fried Wonton - 10pcs | House made pork and prawn filling served with sweet chili sauce | 10.00 | Deep Fried Wonton.png
+6 |  Pan fried Dumpling – 10pcs | House made chicken filling served with Soy sauce | 10.00 | Pan fried Dumpling.png
+6 |  Boiled Dumpling – 10pcs | House made chicken filling served with Soy sauce | 10.00 | Boiled Dumpling.png
 7 |  Satay Chicken Skewers  |  Satay chicken skewers served with house special satay sauce | 8.95 | 01.png
 8 |  Crispy Chicken with bone  |  Crispy battered chicken pcs tossed in spicy sweet soy sauce, served with rice and Asian coleslaw | 9.95 | Crispy Chicken with bone.png
 9 | Chicken Wings – 2pcs | Lightly battered chicken wings tossed in house special sweet chilli soy sauce served with lettuce | 9.95 | Chicken Wings.png

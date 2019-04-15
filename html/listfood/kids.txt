@@ -1,9 +1,9 @@
 TITLE | KID MENU | All kid’s meal come with free apple juice
-1 |  Potato wedges |   | 6.00 | 01.png
-1 |  Pan Fried Dumpling (5pcs) | Homemade chicken dumpling served with sesame oil and soy sauce| 6.00 | 04.png
-1 |  Boiled Dumpling (5pcs) | Homemade chicken dumpling served with sesame oil and soy sauce| 6.00 | 01.png
-1 | Deep fried Wonton (5pcs) | Homemade pork and prawn wonton served with sweet chili sauce sauce | 6.00 | 01.png
-1 | Chicken Nuggets and Rice | Chicken nuggets served with steamed rice and tomato sauce | 8.50 | 01.png
-1 | Chicken Nuggets and Noodles | Chicken nuggets served with thick egg noodle and tomato sauce | 8.50 | 01.png
+1 |  Potato wedges |   | 6.00 | Potato wedges.png
+1 |  Pan Fried Dumpling (5pcs) | Homemade chicken dumpling served with sesame oil and soy sauce| 6.00 | Pan fried Dumpling.png
+1 |  Boiled Dumpling (5pcs) | Homemade chicken dumpling served with sesame oil and soy sauce| 6.00 | Boiled Dumpling.png
+1 | Deep fried Wonton (5pcs) | Homemade pork and prawn wonton served with sweet chili sauce sauce | 6.00 | Deep Fried Wonton.png
+1 | Chicken Nuggets and Rice | Chicken nuggets served with steamed rice and tomato sauce | 8.50 | Chicken Nuggets and Rice.png
+1 | Chicken Nuggets and Noodles | Chicken nuggets served with thick egg noodle and tomato sauce | 8.50 | Chicken Nuggets and Noodles.png
 
 TITLE | KIDS EAT FREE ON TUESDAY NIGHT (after 5pm) | Free kid meal with every main meal ordered and kids must be under 12 years old

@@ -12,6 +12,6 @@ TITLE | RICE DISH
 1 | Combination Fried Rice - GF option | Rice stir fried with chicken, beef, pork, seafood stick, prawn, mixed diced vegetables, egg, brown onion | 13.95 | Combination Fried Rice.png
 1 |  Thai Chicken Fried Rice | Rice stir fried with chicken, tomato, basil, sweet sour sauce mixed diced vegetables, egg, brown onion | 13.95 | Thai Chicken Fried Rice.png
 1 | Chicken Mushroom Fried Rice | Rice stir fried with chicken, mushroom mixed diced vegetables, egg, brown onion in dark soy sauce | 14.95 | Chicken Mushroom Fried Rice.png
-1 | Crispy Fried Rice - GF option | Rice stir fried with seafood stick, prawn, mixed diced vegetables, egg, brown onion, tossed with Chikko’s special salted and pepper seasoning | 15.95 | 01.png
+1 | Crispy Fried Rice - GF option | Rice stir fried with seafood stick, prawn, mixed diced vegetables, egg, brown onion, tossed with Chikko’s special salted and pepper seasoning | 15.95 | Crispy Fried Rice.png
 1 | Garlic Butter Fried Rice - GF option | Rice stir fried with seafood stick, prawn, smoked salmon, garlic butter mixed diced vegetables, egg, brown onion | 15.95 | 01.png
-1 |  Egg Fried Rice - GF option | Rice stir fried with egg | 10.95 | 01.png
+1 |  Egg Fried Rice - GF option | Rice stir fried with egg | 10.95 | Egg Fried Rice.png

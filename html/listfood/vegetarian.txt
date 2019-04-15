@@ -1,12 +1,16 @@
 TITLE | VEGETARIAN | 
 1 |  Vietnamese Veggie Curry | Traditional Vietnamese vegetable curry slow cooked in coconut cream served with steam rice  | 16.95 | 01.png
 1 |  Vegetarian Salad | Vegetable chicken pieces (made from soya beans) served with lettuce, salad, bean sprouts, carrot, onion, mint, coriander, sweet and sour dressing  | 16.95 | 01.png
-1 |  Egg and Avocado Salad | Boiled eggs, avocado served with lettuce, salad, bean sprouts, carrots, onions mint, coriander, mayonnaise and sweet sour dressing  | 15.95 | 01.png
-1 |  Salted Pepper Fish | Lightly battered vegetable fish pieces (made from soy beans) lightly tossed in salt and pepper seasoning served with lettuce, carrot and capsicum  | 16.95 | 01.png
+1 |  Egg and Avocado Salad | Boiled eggs, avocado served with lettuce, salad, bean sprouts, carrots, onions mint, coriander, mayonnaise and sweet sour dressing  | 15.95 | Egg avocado salad.png
+1 |  Salted Pepper Fish | Lightly battered vegetable fish pieces (made from soy beans) lightly tossed in salt and pepper seasoning served with lettuce, carrot and capsicum  | 16.95 | Salted Pepper Fish.png
 1 |  Honey Fish | Light battered vegetable fish pieces (made from soy beans) lightly tossed House special honey sauce served on crispy noodles with cashew nuts  | 18.95 | 01.png
 
 TITLE | SALAD
+1 |  Warm Noodle Salad with Grilled Chicken| Traditional Vietnamese Bun <br> Vietnamese signature warm noodle salad in Special house dressing, comes with mix salad, carrot, bean sprouts, mint, coriander, cucumber and nuts  | 16.95 | Warm Noodle Salad with Grilled Chicken.png
+1 |  Warm Noodle Salad with Spring Rolls | Traditional Vietnamese Bun <br> Vietnamese signature warm noodle salad in Special house dressing, comes with mix salad, carrot, bean sprouts, mint, coriander, cucumber and nuts <br> Additional Spring roll for 1.50 each   | 16.95 | Warm Noodle Salad with Spring Rolls.png
+
 1 |  Warm Noodle Salad | Traditional Vietnamese Bun <br> Vietnamese signature warm noodle salad in Special house dressing, comes with mix salad, carrot, bean sprouts, mint, coriander, cucumber and nuts <br> Grilled Chicken / Grilled Pork / Tofu <br> Meat Ball / Spring Rolls <br> Additional Spring roll for 1.50 each   | 16.95 | 01.png
+
 1 |  Grilled Chicken Salad | Chikko’s signature grilled chicken thigh fillets served with lettuce, salad, Bean sprouts, carrot, onion, mint, coriander, and house dressing |16.95 | 01.png
 1 |  Vietnamese Beef Coleslaw | Sliced beef sauté in lemongrass marinade served with Vietnamese coleslaw and dressing | 16.95 | Vietnamese Beef Coleslaw.png
 1 |  Smoked Salmon Salad | Smoked salmon served with lettuce, salad, bean sprouts, carrot, onion, mint, coriander, house dressing and basil mayonnaise | 17.95 | 01.png

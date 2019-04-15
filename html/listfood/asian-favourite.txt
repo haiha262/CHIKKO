@@ -13,5 +13,5 @@ TITLE | Banh Mi - Traditional Vietnamese Roll | Special toasted bread roll serve
 TITLE | Roti Wrap | Delicious Malaysian style roti bread
 
 1 | Roti Smoked salmon | Roti, mayo, smoked salmon, salad, tomato, avocado with sweet chili sauce | 10.00 | 01.png
-2 | Roti Chicken / Pork / Tofu / Avocado | Roti, mayo, meat, salad, cheese with sweet chili sauce | 7.00 | 01.png
+2 | Roti Chicken / Pork / Tofu / Avocado | Roti, mayo, meat, salad, cheese with sweet chili sauce | 7.00 | Roti Chicken.png
 3 | Roti Scrambled Egg | Roti, mayo, egg, and cheese | 7.00 | 01.png
