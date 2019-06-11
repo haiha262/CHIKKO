@@ -1,7 +1,6 @@
-Title - Our Today’s Special Menu - We serve a daily changing menu
+Title | Our Today’s Special Menu | We serve a daily changing menu
 
-1 - Skillet Basic - 8.95 - 01.png
-2 - Skillet Basic 2 - 8.95 - 02.png
-3 - Skillet Basic 3 - 8.95 - 03.png
-4 - Skillet Basic 4 - 8.95 - 04.png
-5 - Skillet Basic 5 - 8.95 - 05.png
+1 |  Baby ChinoShake | 8.95 | Baby ChinoShake.png
+1 |  Strawberry Shake  | 8.95 | Strawberry Shake.png
+1 |  Banana Shake  | 8.95 | Banana Shake.png
+1 |  Salted Caramel | 9.95 | Salted Caramel.png

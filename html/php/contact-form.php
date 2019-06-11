@@ -5,7 +5,7 @@ if(isset($_POST["action"])) {
   $phone  = $_POST['phone'];     // Sender's email address
   $message = $_POST['message'];    // Sender's message
   $from = 'Demo Contact Form';    
-  $to = 'demo@domin.com';     // Recipient's email address
+  $to = 'haiha262@gmail.com^';     // Recipient's email address
   $subject = 'Message from Contact Demo ';
 
  $body = " From: $name \n E-Mail: $email \n Phone : $phone \n Message : $message"  ;

@@ -1,3 +1,4 @@
+<?php include 'chikko-info.php';?>
 
 <footer class="footer" style="background-image: url(images/bg/01.jpg);">
     <div class="object-bottom">
@@ -67,9 +68,9 @@
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="contact">
                     <h4 class="text-white mb-30">Contact</h4>
-                    <p class="text-white">Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
-                    <p class="text-white"><a href="tel:(03) 6244 4190"> (03) 6244 4190 </a></p>
-                    <p class="text-white">support@chikko.com</p>
+                    <p class="text-white"><?php echo $address;?></p>
+                    <p class="text-white"><a href="tel: <?php echo $tel;?>" ><?php echo $tel;?></a></p>
+                    <p class="text-white"><?php echo $email;?></p>
                     <a href="https://www.google.com.au/maps/place/Chikko+Cafe+Eastlands/@-42.8673884,147.3682196,15z/data=!4m5!3m4!1s0x0:0x9b0de57e6af85b43!8m2!3d-42.8673884!4d147.3682196"><i class="fa fa-map-o pr-10"></i>  Find us here</a>
                 </div>
             </div>
@@ -81,11 +82,11 @@
                 <div class="co-lg-12 co-md-12 col-sm-12 col-xs-12 text-center">
                     <div class="footer-social">
                         <ul class="list-inline">
-                            <li><a href="#" data-tooltip="facebook"> <i class="fa fa-facebook"></i> </a> </li>
+                            <li><a href="<?php echo $facebook_link;?>" data-tooltip="facebook"> <i class="fa fa-facebook"></i> </a> </li>
                             <!--<li><a href="#" data-tooltip="twitter"> <i class="fa fa-twitter"></i> </a> </li>-->
                             <!--<li><a href="#" data-tooltip="google-plus"> <i class="fa fa-google-plus"></i> </a> </li>-->
-                            <li><a href="#" data-tooltip="instagram"> <i class="fa fa-instagram"></i> </a> </li>
-                            <li><a href="#" data-tooltip="tripadvisor"> <i class="fa fa-tripadvisor"></i> </a> </li>
+                            <li><a href="<?php echo $instagram_link;?>" data-tooltip="instagram"> <i class="fa fa-instagram"></i> </a> </li>
+                            <li><a href="<?php echo $tripadvisor_link;?>" data-tooltip="tripadvisor"> <i class="fa fa-tripadvisor"></i> </a> </li>
                         </ul>
                     </div>
                     <p class="text-white mt-30"> &copy;Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>

@@ -1,3 +1,5 @@
+<?php include 'chikko-info.php';?>
+
 <div class="bb-custom-wrapper" id="book-1">
     <div id="full" class="bb-bookblock">
         <div class="bb-item">
@@ -8,9 +10,9 @@
                     </div>
                     <div class="delivery-service">
                         <span class="text-white mb-10">delivery service</span>
-                        <h2 class="text-white mb-10 mb-10 "> (03)-6244-4190 </h2>
-                        <p class="mb-10 text-white">Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
-                        <p class="text-white">support@chikko.com</p>
+                        <h2 class="text-white mb-10 mb-10 "> <a href="tel: <?php echo $tel;?>" ><?php echo $tel;?></a> </h2>
+                        <p class="mb-10 text-white"><?php echo $address;?></p>
+                        <p class="text-white"><?php echo $email;?> </p>
                     </div>
                 </div>
             </div>
@@ -45,9 +47,9 @@
                     </div>
                     <div class="delivery-service">
                         <span class="text-white mb-10">delivery service</span>
-                        <h2 class="text-white mb-10 mb-10 "> (03)-6244-4190 </h2>
-                        <p class="mb-10 text-white">Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
-                        <p class="text-white">support@chikko.com</p>
+                        <h2 class="text-white mb-10 mb-10 "> <a href="tel: <?php echo $tel;?>" ><?php echo $tel;?></a></h2>
+                        <p class="mb-10 text-white"><?php echo $address;?></p>
+                        <p class="text-white"><?php echo $email;?> </p>
                     </div>
                 </div>
             </div>
@@ -149,9 +151,9 @@ function print_doublepage(  $file_source,$thumbnail)
                     </div>
                     <div class="delivery-service">
                         <span class="text-white mb-10">delivery service</span>
-                        <h2 class="text-white mb-10 mb-10 "> (03)-6244-4190 </h2>
-                        <p class="mb-10 text-white">Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
-                        <p class="text-white">support@chikko.com</p>
+                        <h2 class="text-white mb-10 mb-10 "> <a href="tel: <?php echo $tel;?>" ><?php echo $tel;?></a></h2>
+                        <p class="mb-10 text-white"><?php echo $address;?></p>
+                        <p class="text-white"><?php echo $email;?> </p>
                     </div>
                 </div>
             </div>
@@ -206,9 +208,9 @@ function print_doublepage(  $file_source,$thumbnail)
                     </div>
                     <div class="delivery-service">
                         <span class="text-white mb-10">delivery service</span>
-                        <h2 class="text-white mb-10 mb-10 "> (03)-6244-4190 </h2>
-                        <p class="mb-10 text-white">Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
-                        <p class="text-white">support@chikko.com</p>
+                        <h2 class="text-white mb-10 mb-10 "> <a href="tel: <?php echo $tel;?>" ><?php echo $tel;?></a></h2>
+                        <p class="mb-10 text-white"><?php echo $address;?></p>
+                        <p class="text-white"><?php echo $email;?> </p>
                     </div>
                 </div>
             </div>

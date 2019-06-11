@@ -1,6 +1,6 @@
 TITLE |  STIR FRIED PLATE | Make your own stir-fried plate by choosing your favorite meat or tofu stir fried with our special sauce. All stir fried dish come with seasonal vegetables and steamed rice
 
-1 | Tofu / Vegetables  |  | 14.95 | 01.png
+1 | Tofu / Vegetables  |  | 14.95 | Tofu.png
 2 | Beef  |  | 16.95 | STIR FRIED PLATE - Beef.png
 2 | Chicken  |  | 16.95 | STIR FRIED PLATE - Chicken.png
 2 | Prawn  |  | 18.95 | STIR FRIED PLATE - Prawn.png
@@ -13,5 +13,5 @@ TITLE | RICE DISH
 1 |  Thai Chicken Fried Rice | Rice stir fried with chicken, tomato, basil, sweet sour sauce mixed diced vegetables, egg, brown onion | 13.95 | Thai Chicken Fried Rice.png
 1 | Chicken Mushroom Fried Rice | Rice stir fried with chicken, mushroom mixed diced vegetables, egg, brown onion in dark soy sauce | 14.95 | Chicken Mushroom Fried Rice.png
 1 | Crispy Fried Rice - GF option | Rice stir fried with seafood stick, prawn, mixed diced vegetables, egg, brown onion, tossed with Chikko’s special salted and pepper seasoning | 15.95 | Crispy Fried Rice.png
-1 | Garlic Butter Fried Rice - GF option | Rice stir fried with seafood stick, prawn, smoked salmon, garlic butter mixed diced vegetables, egg, brown onion | 15.95 | 01.png
+1 | Garlic Butter Fried Rice - GF option | Rice stir fried with seafood stick, prawn, smoked salmon, garlic butter mixed diced vegetables, egg, brown onion | 15.95 | Garlic Butter Fried Rice.png
 1 |  Egg Fried Rice - GF option | Rice stir fried with egg | 10.95 | Egg Fried Rice.png

@@ -76,7 +76,6 @@
         "                                        <div class=\"address\">\n" +
         "                                            <p>Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>\n" +
         "                                            <p> (03) 6244 4190 </p>\n" +
-        "                                            <p>support@chikko.com </p>\n" +
         "                                            <a href=\"https://www.google.com.au/maps/place/Chikko+Cafe+Eastlands/@-42.8673884,147.3682196,15z/data=!4m5!3m4!1s0x0:0x9b0de57e6af85b43!8m2!3d-42.8673884!4d147.3682196\"><i class=\"fa fa-map-o pr-10\"></i>  Find us here</a>\n" +
         "                                            <ul class=\"list-inline mt-15\">\n" +
         "                                                <li><a href=\"#\"> <i class=\"fa fa-facebook\"></i> </a> </li>\n" +
@@ -111,7 +110,7 @@
        // $("#includedMainmenu").append(data);
 
     // $("#includedMainmenu").load("main-menu.html");
-    $("#includedFootermenu").load("footer-menu.html");
+    $("#includedFootermenu").load("footer-menu.php");
     // Add active class to the current button (highlight it)
 
     //

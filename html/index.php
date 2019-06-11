@@ -116,7 +116,7 @@ slider -->
                          data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                          data-start="1500"
                          data-responsive_offset="on"
-                         style="z-index: 6;"><img src="revolution/assets/Char Kway Teow.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+                         style="z-index: 6;"><img src="revolution/assets/Rainbow Shake.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption   tp-resizeme"
                          id="slide-4-layer-7"
@@ -130,7 +130,7 @@ slider -->
                          data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                          data-start="1500"
                          data-responsive_offset="on"
-                         style="z-index: 7;"><img src="revolution/assets/poached egg.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+                         style="z-index: 7;"><img src="revolution/assets/Salted Caramel.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption  text-orange tp-resizeme  text-center"
                          id="slide-4-layer-14"
@@ -172,7 +172,7 @@ slider -->
                          data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                          data-start="3800"
                          data-responsive_offset="on"
-                         style="z-index: 10;"><img src="revolution/assets/Chicken Nuggets and Rice.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+                         style="z-index: 10;"><img src="revolution/assets/Baby ChinoShake.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
                     <!-- LAYER NR. 7 -->
                     <div class="tp-caption   tp-resizeme"
                          id="slide-4-layer-3"
@@ -200,7 +200,7 @@ slider -->
                          data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                          data-start="3800"
                          data-responsive_offset="on"
-                         style="z-index: 12;"><img src="revolution/assets/Crispy Noodles with Beef.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+                         style="z-index: 12;"><img src="revolution/assets/Banana Shake.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
                     <!-- LAYER NR. 9 -->
                     <div class="tp-caption tp-resizeme mo-details-text"
                          id="slide-4-layer-13"
@@ -230,7 +230,7 @@ slider -->
                          data-mask_out="x:0;y:0;s:inherit;e:inherit;"
                          data-start="5800"
                          data-responsive_offset="on"
-                         style="z-index: 14;"><img src="revolution/assets/Laksa Noodle Soup.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
+                         style="z-index: 14;"><img src="revolution/assets/Fairy Shake.png" alt="" data-ww="auto" data-hh="auto" data-no-retina> </div>
                     <!-- LAYER NR. 11 -->
                     <div class="tp-caption tp-resizeme mo-sub-title-text"
                          id="slide-4-layer-12"
@@ -424,7 +424,7 @@ Menu List -->
 <section class="about white-bg">
   <div class="object-bottom-top">
     <div class="object-left">
-      <img class="img-responsive" src="images/object/01.jpg" alt="">
+      <img class="img-responsive" src="images/object/01.png" alt="">
     </div>
     <div class="object-right">
       <img class="img-responsive" src="images/object/02.jpg" alt="">
@@ -499,7 +499,7 @@ special-menu -->
         $file = fopen("./listfood/special.txt", "r") or exit("Unable to open file!");
         if(!feof($file)) {
             $line = fgets($file);
-            $token = explode( "-",$line);
+            $token = explode( "|",$line);
 
             if(strtolower(trim($token[0])) == 'title') {
                 ?>
@@ -533,7 +533,7 @@ special-menu -->
               while(!feof($file))
               {
                   $line = fgets($file);
-                  $token = explode( "-",$line);
+                  $token = explode( "|",$line);
 
                   if(is_numeric(trim($token[0]))) {
 

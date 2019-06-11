@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="css/skins/skin-dark-green.css">
 </head>
 <body>
-
+<?php include 'chikko-info.php';?>
 <!--=================================
  loading -->
 
@@ -102,28 +102,28 @@
          <div class="contact-box text-center">
             <i class="fa fa-map-marker"></i>
             <h5>Address</h5>
-            <p>Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
+            <p><?php echo $address;?> </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
          <div class="contact-box text-center">
             <i class="fa fa-phone"></i>
             <h5>Phone</h5>
-             <p> <a href="tel:(03) 6244 4190">(03) 6244 4190 </a></p>
+             <p> <a href="tel: <?php echo $tel;?>"><?php echo $tel;?> </a></p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
          <div class="contact-box text-center">
             <i class="fa fa-envelope-o"></i>
             <h5>Email</h5>
-            <p> support@chikko.com</p>
+            <p> <?php echo $email;?> </p>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
          <div class="contact-box text-center">
             <i class="fa fa-fax"></i>
             <h5>Fax</h5>
-            <p> (03) 6244 4190 </p>
+            <p> <a href="tel: <?php echo $tel;?>"><?php echo $tel;?> </a> </p>
           </div>
         </div>
       </div>

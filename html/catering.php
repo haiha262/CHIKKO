@@ -83,7 +83,7 @@
                             <div class="address">
                                 <p>Eastlands Shopping Centre 26 Bligh Street Kmart Entrance, Rosny Park TAS 7018 </p>
                                 <p> <a href="tel:(03) 6244 4190">(03) 6244 4190 </a></p>
-                                <p>support@chikko.com </p>
+                                <p><?php echo $email;?> </p>
                                 <a href="https://www.google.com.au/maps/place/Chikko+Cafe+Eastlands/@-42.8673884,147.3682196,15z/data=!4m5!3m4!1s0x0:0x9b0de57e6af85b43!8m2!3d-42.8673884!4d147.3682196"><i class="fa fa-map-o pr-10"></i>  Find us here</a>
                                 <ul class="list-inline mt-15">
                                     <li><a href="#"> <i class="fa fa-facebook"></i> </a> </li>
