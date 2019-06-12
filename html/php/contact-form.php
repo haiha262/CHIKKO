@@ -1,15 +1,24 @@
 <?php
-if(isset($_POST["action"])) {
+if(isset($_POST["name"])) {
   $name = $_POST['name'];                 // Sender's name
   $email = $_POST['email'];     // Sender's email address
   $phone  = $_POST['phone'];     // Sender's email address
-  $message = $_POST['message'];    // Sender's message
-  $from = 'Demo Contact Form';    
-  $to = 'haiha262@gmail.com^';     // Recipient's email address
-  $subject = 'Message from Contact Demo ';
 
- $body = " From: $name \n E-Mail: $email \n Phone : $phone \n Message : $message"  ;
-	
+    $date = $_POST['date'];    // Sender's message
+    $time = $_POST['time'];    // Sender's message
+    $person = $_POST['person'];    // Sender's message
+  $message = $_POST['message'];    // Sender's message
+
+
+  $from = 'Contact Form';
+  $to = 'haiha262@gmail.com';     // Recipient's email address
+  $subject = 'Message from Chikko Cafe ';
+
+ $body = " From: $name \n E-Mail: $email \n Phone : $phone \n Message : $message";
+ if( $date != "")
+ {
+     $body .= "\n Reservation for $person people on $date  at  $time";
+ }
 	// init error message 
 	$errmsg='';
   // Check if name has been entered
@@ -30,6 +39,7 @@ if(isset($_POST["action"])) {
  
 	$result='';
   // If there are no errors, send the email
+
   if (!$errmsg) {
 		if (mail ($to, $subject, $body, $from)) {
 			$result='<div class="alert alert-success">Thank you for contacting us. Your message has been successfully sent. We will contact you very soon!</div>'; 

@@ -12,44 +12,44 @@
 <link rel="shortcut icon" href="images/favicon.ico" />
 
 <!-- bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"  async=“” />
 
 <!-- google font -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Amatic+SC:400,700|Lilita+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Amatic+SC:400,700|Lilita+One" rel="stylesheet"  async=“”>
 
 <!-- flaticon -->
-<link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+<link rel="stylesheet" type="text/css" href="css/flaticon.css"  async=“”/>
 
 <!-- font awesome -->
-<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"  async=“”/>
 
 <!-- mega menu -->
-<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css" />
+<link rel="stylesheet" type="text/css" href="css/mega-menu/mega_menu.css"  async=“”/>
 
 <!-- carousel -->
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"  async=“”/>
 
 <!-- datepicker -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.min.css"  async=“”/>
 
 <!-- book -->
-<link rel="stylesheet" type="text/css" href="css/book/component.css" />
+<link rel="stylesheet" type="text/css" href="css/book/component.css"  async=“”/>
 
 <!-- revolution slider -->
-<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+<link rel="stylesheet" type="text/css" href="revolution/css/settings.css" async=“”>
+<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css" async=“”>
 
 <!-- main style -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css"  async=“”/>
 
 <!-- responsive -->
-<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css" async=“”>
 
 <!-- skin color -->
-<link rel="stylesheet" href="css/skins/skin-dark-green.css">
+<link rel="stylesheet" href="css/skins/skin-dark-green.css" async=“”>
 
 <!--FancyBox-->
-    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css"  async=“”/>
 
 </head>
 <body>
@@ -541,7 +541,7 @@ special-menu -->
                               <div class=\"menu-body menu-center\">
                                 <div class=\"menu-thumbnail\">
                                    <a href=\"images/dish/" . trim($token[3]) . "\">
-                                  <img class=\"img-responsive center-block\" src=\"images/dish/" . trim($token[3]) . "\" alt=\"\">
+                                  <img class=\"img-responsive center-block lazyload\" data-src=\"images/dish/" . trim($token[3]) . "\" alt=\"\">
                                   </a>
                                 </div>
                                 <div class=\"menu-details\">
@@ -657,7 +657,7 @@ our-menu -->
                                           <div class="menu-body menu-left">
                                               <div class="menu-thumbnail">
                                                   <a href="images/dish/<?php echo trim($token[4]); ?>">
-                                                      <img class="img-responsive center-block" src="images/dish/<?php echo trim($token[4]); ?>" alt="">
+                                                      <img class="img-responsive center-block lazyload" data-src="images/dish/<?php echo trim($token[4]); ?>" alt="">
                                                   </a>
                                               </div>
                                               <div class="menu-details">
@@ -681,7 +681,7 @@ our-menu -->
                                                   <div class="menu-body menu-left">
                                                       <div class="menu-thumbnail">
                                                           <a href="images/dish/<?php echo trim($tkn[4]); ?>">
-                                                              <img class="img-responsive center-block" src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">                                                          </a>
+                                                              <img class="img-responsive center-block lazyload" data-src="images/dish/<?php echo trim($tkn[4]); ?>" alt="">                                                          </a>
 
                                                       </div>
                                                       <div class="menu-details">
@@ -745,44 +745,46 @@ reservation form  -->
         </div>
       </div>
       <div class="col-lg-8 col-md-7 col-sm-12 pl-0 pr-0 white-bg">
-        <form class="row">
+
+
+          <form class="row" id="contactform" role="form" method="post" action="php/contact-form.php">
           <div class="col-lg-12 col-md-12">
             <h3 class="mb-30">Reservation form</h3>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-pencil"></i>
-              <input class="web placeholder" type="text" placeholder="Full Name" name="web">
+              <input class="web placeholder" type="text" placeholder="Full Name" name="name">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-phone"></i>
-              <input class="web placeholder" type="text" placeholder="Phone Number" name="web">
+              <input class="web placeholder" type="text" placeholder="Phone Number" name="phone">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-envelope-o"></i>
-              <input class="web placeholder" type="text" placeholder="Your Email" name="web">
+              <input class="web placeholder" type="text" placeholder="Your Email" name="email">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field" id="datepicker">
               <i class="fa fa-calendar add-on"></i>
-              <input data-format="yyyy-MM-dd" type="text" placeholder="Select date">
+              <input data-format="dd-MM-yyyy" type="text" placeholder="Select date" name="date">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field" id="timepicker">
               <i class="fa fa-clock-o icon-time add-on"></i>
-              <input data-format="hh:mm:ss" type="text" placeholder="Select time">
+              <input data-format="hh:mm:ss" type="text" placeholder="Select time" name="time">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <div class="selected-box">
-                <select>
+                <select name="person">
                   <option value="Person">Person</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -799,10 +801,12 @@ reservation form  -->
           </div>
           <div class="col-lg-12">
             <div class="submit-button">
-              <a class="button" href="#">Book A Table</a>
-              <span>Is all about good food. Enjoy our decious food</span>
+                <button id="submit" name="Submit" type="submit" value="Send" class="button" > Book A Table</button>
+
+                <span>Is all about good food. Enjoy our decious food</span>
             </div>
           </div>
+              <div id="formmessage">Success/Error Message Goes Here</div>
         </form>
       </div>
     </div>
@@ -891,7 +895,7 @@ The following part can be removed on Server for On Demand Loading) -->
 
 <!--Fancybox-->
 <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
-
-
+<!--lazy load-->
+<script type="text/javascript" src="js/lazysizes.min.js" async=“”></script>
 </body>
 </html>

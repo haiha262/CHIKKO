@@ -102,25 +102,26 @@
    </div>
    <div class="row">
     <div class="col-lg-10  col-lg-offset-1">
-      <form class="form-horizontal" id="contactform">
+        <div id="formmessage">Success/Error Message Goes Here</div>
+      <form class="form-horizontal" id="contactform" role="form" method="post" action="php/contact-form.php">
          <div class="contact-form">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field">
                 <i class="fa fa-pencil"></i>
-            <input class="web placeholder" type="text" placeholder="Full Name" name="web">
+            <input class="web placeholder" type="text" placeholder="Full Name" name="name">
           </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field">
                 <i class="fa fa-phone"></i>
-            <input class="web placeholder" type="text" placeholder="Phone Number" name="web">
+            <input class="web placeholder" type="text" placeholder="Phone Number" name="phone">
           </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field">
                 <i class="fa fa-envelope-o"></i>
-            <input class="web placeholder" type="text" placeholder="Your Email" name="web">
+            <input class="web placeholder" type="text" placeholder="Your Email" name="email">
           </div>
               </div>
             </div>
@@ -128,19 +129,19 @@
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field" id="datepicker">
                 <i class="fa fa-calendar add-on"></i>
-            <input data-format="yyyy-MM-dd" type="text" placeholder="Select date">
+            <input data-format="yyyy-MM-dd" type="text" placeholder="Select date" name="date">
           </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field" id="timepicker">
                 <i class="fa fa-clock-o icon-time add-on"></i>
-            <input data-format="hh:mm:ss" type="text" placeholder="Select time">
+            <input data-format="hh:mm:ss" type="text" placeholder="Select time" name="time">
           </div>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="form-field">
             <div class="selected-box">
-                   <select>
+                   <select name="person">
                       <option value="Person">Person</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -161,8 +162,8 @@
             <div class="row">
               <div class="col-lg-12">
               <div class="form-submit mt-10 mb-30 text-center">
-                 
-                 <button id="submit" name="Submit" type="submit" onclick="return false;" class="button uppercase"> Book A Table</button>
+<!--                  class="button uppercase"-->
+                 <button id="submit" name="Submit" type="submit" value="Send" class="button" > Book A Table</button>
               </div>
               </div>
             </div>
