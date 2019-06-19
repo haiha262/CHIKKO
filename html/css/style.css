@@ -832,7 +832,7 @@ figure#mobile { display: none; }
 
 /*menu default*/
 .menu-body { text-align: center; }
-.menu-body .menu-thumbnail img { width: 100px; height: 100%; }
+.menu-body .menu-thumbnail img { width: 130px; height: 100%; }
 .menu-body .menu-thumbnail { margin-bottom: 25px; }
 .menu-body .menu-title { margin-bottom: 20px; }
 .menu-body .menu-title h4 { color: #fff; }
@@ -844,7 +844,7 @@ figure#mobile { display: none; }
 
 /*menu left*/
 .menu-body.menu-left { text-align: left; }
-.menu-body.menu-left .menu-thumbnail { float: left; margin-right: 20px; width: 100px; margin-bottom: 0; }
+.menu-body.menu-left .menu-thumbnail { float: left; margin-right: 20px; width: 130px; margin-bottom: 0; }
 .menu-body.menu-left .menu-details { display: grid; }
 .menu-body.menu-left .menu-title { display: block; border-bottom: 1px dashed #909090; padding-bottom: 10px; }
 .menu-body.menu-left .menu-title h4 { display: inline-block; }

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="Chikko" />
-<meta name="description" content="Chikko - Boutique Coffee and Kitchen" />
+<meta name="keywords" content="Chikkô" />
+<meta name="description" content="Chikkô - Boutique Coffee and Kitchen" />
 <meta name="author" content="tran multimedia" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title> Chikko - Boutique Coffee and Kitchen</title>
+<title> Chikkô - Boutique Coffee and Kitchen</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="images/favicon.ico" />
 
@@ -145,7 +145,7 @@ slider -->
                          data-splitin="none"
                          data-splitout="none"
                          data-responsive_offset="on"
-                         style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:Lilita One;text-transform:uppercase;">welcome to CHIKKO</div>
+                         style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:Lilita One;text-transform:uppercase;">welcome to CHIKKÔ</div>
                     <!-- LAYER NR. 5 -->
                     <div class="tp-caption   tp-resizeme"
                          id="slide-4-layer-11"
@@ -215,7 +215,7 @@ slider -->
                          data-splitin="none"
                          data-splitout="none"
                          data-responsive_offset="on"
-                         style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 24px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;">We are Chikko <br>  Boutique Coffee and Kitchen.
+                         style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 24px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;">We are Chikkô Cafe <br>  Boutique Coffee and Kitchen.
                     </div>
                     <!-- LAYER NR. 10 -->
                     <div class="tp-caption   tp-resizeme"
@@ -377,7 +377,7 @@ slider -->
                          data-splitin="none"
                          data-splitout="none"
                          data-responsive_offset="on"
-                         style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 24px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;">We are Chikko <br> Boutique Coffee and Kitchen.
+                         style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 24px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Open Sans;text-align:center;">We are Chikkô Cafe <br> Boutique Coffee and Kitchen.
                     </div>
                     <!-- LAYER NR. 10 -->
                     <div class="tp-caption   tp-resizeme"
@@ -438,7 +438,7 @@ Menu List -->
             <div class="title-separator">
               <i class="glyph-icon flaticon-food-27"></i>
             </div>
-            <h2> <span class="text-orange">Welcome to</span> Chikko</h2>
+            <h2> <span class="text-orange">Welcome to</span> Chikkô Cafe</h2>
             <p>Whatever your occasion, We makes it one to remember!</p>
           </div>
         </div>

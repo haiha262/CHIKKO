@@ -46,8 +46,8 @@ Design and Developed by: potenzaglobalsolutions.com
 .counter .object-bottom .object-left { display: none; }
 .our-menu .menu-body { margin-bottom: 50px; }
 .menu-body.menu-white { padding:0;  }
-.menu-body.menu-left .menu-thumbnail,.menu-body.menu-right .menu-thumbnail{ width: 120px; }
-.menu-body .menu-thumbnail img { width: 120px; }
+.menu-body.menu-left .menu-thumbnail,.menu-body.menu-right .menu-thumbnail{ width: 130px; }
+.menu-body .menu-thumbnail img { width: 130px; }
 .object-4 .object-right { display: none; }
 .object-3 { display: none; }
 .newsletter-section .newsletter-image img { top: -75px; }
@@ -154,7 +154,7 @@ header { position: relative; background: #1e2327; }
 .pricing-grid .pricing-table { padding: 20px 0; }
 .pricing-grid .pricing-table.active .pricing-title h2 { padding: 24px 0 ; }
 .pricing-grid .pricing-table .pricing-icon i { font-size: 100px;}
-.menu-body.menu-left .menu-thumbnail,.menu-body.menu-right .menu-thumbnail{ width: 100px; }
+.menu-body.menu-left .menu-thumbnail,.menu-body.menu-right .menu-thumbnail{ width: 150px; }
 .menu-body .menu-thumbnail img { width: 100px; }
 .reservation-form .form-image{ display: none; }
 .reservation-form .row-eq-height { display: block; }
